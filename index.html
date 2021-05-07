@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <title>GoFit | Fitness Gamified.</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./assets/img/logo.png" type="image/png">
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="landing__wrapper">
+      <div class="header">
+        <div class="logo">
+          <img src="./assets/img/logo.png" alt="GoFit Logo" />
+        </div>
+      </div>
+
+      <div class="landing__content">
+        <div class="sub__text">DON'T JUST PUSH BUTTONS, PUSH YOURSELF.</div>
+        <div class="main__text">Track your fitness in a Game.</div>
+
+        <form action="#" class="code__form">
+          <input
+            type="text"
+            name="code"
+            id="code"
+            class="code__input"
+            placeholder="Game Code"
+            maxlength="6"
+            minlength="6"
+          />
+        </form>
+
+        <div class="input__loader">
+          <svg
+            class="spinner"
+            width="65px"
+            height="65px"
+            viewBox="0 0 66 66"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              class="circle"
+              fill="none"
+              stroke-width="6"
+              stroke-linecap="round"
+              cx="33"
+              cy="33"
+              r="30"
+            ></circle>
+          </svg>
+
+          Connecting...
+        </div>
+      </div>
+    </div>
+    <div id="gofit-world"></div>
+
+    <script type="text/javascript" src="assets/js/three.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-database.js"></script>
+    <script src="./assets/js/firebase.js"></script>
+    <script type="text/javascript" src="assets/js/landing.js"></script>
+  </body>
+</html>
