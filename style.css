@@ -121,6 +121,51 @@ body {
   animation: rotation 1.35s linear infinite;
 }
 
+#gofit-world-game {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  overflow: hidden;
+}
+
+.game__wrapper {
+  background: -webkit-gradient(linear, left top, left bottom, from(#badbe4), to(#aaf7e1));
+  background: linear-gradient(#badbe4, #aaf7e1);
+}
+
+.panel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 2em 3em;
+  width: 25%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.game-title {
+  z-index: 100;
+  position: relative;
+  text-align: center;
+}
+
+.game-title .title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 3em;
+}
+
+.game-title .byline {
+  font-family: 'Playfair Display', serif;
+  text-transform: uppercase;
+  color: #333;
+  letter-spacing: 0.2em;
+  font-size: 0.8em;
+  font-weight: 600;
+  margin-top: 0.5em;
+}
+
 @-webkit-keyframes rotation {
   0% {
     -webkit-transform: rotate(0deg);

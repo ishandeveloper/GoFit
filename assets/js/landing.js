@@ -286,18 +286,40 @@ function World(element) {
 
 // let database = firebase.database();
 
-document.querySelector(".code__form").addEventListener("submit", (e) => {
+document.querySelector(".code__form").addEventListener("submit", async (e) => {
   e.preventDefault();
 
   document.querySelector(".code__input").disabled = true;
   document.querySelector(".code__input").classList.add("disabled");
   document.querySelector(".input__loader").style.opacity = 1;
+  document.querySelector(".input__loader").textContent = "Connecting";
 
-  console.log(document.querySelector(".code__input").value);
+  let database = firebase.database();
+
+  database
+    .ref(document.querySelector(".code__input").value)
+    .get()
+    .then((e) => {
+      if (e.exists()) {
+        const update = {
+          web_online: true,
+        };
+        database
+          .ref(document.querySelector(".code__input").value)
+          .update(update);
+
+        window.location.href = `./game.html?code=${
+          document.querySelector(".code__input").value
+        }`;
+      } else {
+        document.querySelector(".input__loader").textContent = "Wrong Game ID";
+        document.querySelector(".code__input").disabled = false;
+        document.querySelector(".code__input").classList.remove("disabled");
+      }
+    });
 });
 
 document.querySelector(".code__input").addEventListener("submit", () => {
-  console.log("HEY");
   document.querySelector(".code__input").disabled = true;
   document.querySelector(".input__loader").style.opacity = 1;
 });
