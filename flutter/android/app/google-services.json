@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1004440584467",
+    "firebase_url": "https://gofit-33fb5-default-rtdb.firebaseio.com",
+    "project_id": "gofit-33fb5",
+    "storage_bucket": "gofit-33fb5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1004440584467:android:9ac2f2edb2b60445ebdae6",
+        "android_client_info": {
+          "package_name": "com.example.gofit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1004440584467-dpf63quqg53kkcekpu3pephedhoh23tp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6vOjdcM7XUio0qZXpS7_6ZNpB7mxYR68"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1004440584467-dpf63quqg53kkcekpu3pephedhoh23tp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
